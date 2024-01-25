@@ -1,0 +1,546 @@
+* {
+  margin: 0px;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Chỉnh sửa hình ảnh cá nhân */
+#banner {
+  /* text-align: center; */
+  position: relative;
+}
+
+/* Chỉnh sửa chữ trong hình ảnh */
+#banner p {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+}
+#banner span {
+  color: black;
+  font-size: 20px;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+  text-align: center;
+  margin: 0;
+}
+
+/*  */
+/*  */
+/*CHỈNH SỬA THANH NAV */
+/*  */
+/*  */
+#nav-bar {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FLEX BOX  */
+#menu {
+  padding: 0;
+  display: flex;
+  place-content: center;
+}
+
+/* Chỉnh font chữ  */
+#boostrap-override a {
+  color: #000;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 0;
+}
+
+/* Kích thước */
+#menu div {
+  width: 150px;
+  height: 50px;
+}
+
+/* Màu icon  */
+#menu i {
+  color: #2671e2;
+}
+
+/* Đường viền giữa mỗi ô */
+.name-1 {
+  border-left: 1px solid #4870e0;
+  padding-top: 10px;
+}
+
+/* Hình ảnh cá nhân */
+.introduction img {
+  width: 120px;
+  height: 120px;
+  border: 7px solid white;
+  border-radius: 50%;
+}
+.name-2 {
+  border-right: 1px solid #4870e0;
+  padding-top: 10px;
+}
+
+/*  */
+/*  */
+/* THÔNG TIN CÁ NHÂN VÀ MỤC TIÊU NGHỀ NGHIỆP */
+/*  */
+/*CSS GRID*/
+#about-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  padding: 0 0;
+}
+
+/* Tiêu đề của 2 mục chính */
+.section-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 450;
+  padding-bottom: 30px;
+}
+
+/* Căn chỉnh vị trí mục tiêu nghề nghiệp*/
+#target {
+  margin: 50px 15px;
+}
+
+/* Căn chỉnh vị trí thông tin cá nhân */
+#personal-info {
+  margin-top: 50px;
+}
+.info {
+  list-style-type: none;
+  padding-left: 0;
+}
+.info li {
+  padding-bottom: 5px;
+}
+.info span {
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Chỉnh sửa các icon */
+.icon-bonus {
+  color: #2671e2;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.form-text {
+  margin-bottom: 20px;
+}
+/*  */
+/*  */
+/*CHỈNH SỬA PHẦN THÔNG TIN NGHỀ NGHIỆP */
+/*  */
+/*  */
+/* CSS GRID */
+#job-info-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 20px;
+}
+
+/* Tên từng mục */
+.details {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Thời gian của từng mục */
+.timeline {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+#timeline {
+  color: white;
+  background-color: #2671e2;
+  border: 1px solid white;
+  border-radius: 10%;
+  padding: 1px 10px;
+}
+
+/* Mô tả từng mục */
+.description {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+/* ICON */
+#icon {
+  font-size: 50px;
+}
+
+/* Xây dựng bố cục chung */
+.structure {
+  grid-column: 1/3;
+}
+
+/* Hover từng mục */
+.skill:hover .view-more {
+  display: block;
+}
+
+#boostrap-override .skill {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+/* NÚT VIEW MORE */
+#boostrap-override .dropdown-toggle::after {
+  display: none;
+}
+
+#boostrap-override .dropdown-toggle::before {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: '';
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  margin-right: 10px;
+}
+
+.view-more {
+  background-color: #9b7a4c;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 140px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+/* Kinh nghiệm */
+/* Bố cục */
+.experience {
+  padding: 20px 20px;
+  border: 2px solid #a59e9e;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  row-gap: 30px;
+}
+
+/* Tên phần */
+.name-experience {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 650;
+  margin-bottom: 20px;
+}
+
+/* Học vấn */
+.education {
+  padding: 20px 20px;
+  border: 2px solid #a59e9e;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  row-gap: 30px;
+}
+
+/* Tên phần */
+.name-education {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 650;
+  margin-bottom: 32.4px;
+}
+
+/* Hoạt động */
+.activities {
+  padding: 20px 20px;
+  border: 2px solid #a59e9e;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  row-gap: 30px;
+}
+
+/* Tên phần */
+.name-activities {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 650;
+  margin-bottom: 20px;
+}
+
+/*  */
+/*  */
+/* CHỈNH SỬA PHẦN SỞ THÍCH */
+/*  */
+/*  */
+/* Bố cục chung*/
+.favorite {
+  padding: 20px 20px;
+  border: 2px solid #a59e9e;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  row-gap: 30px;
+}
+
+/* Tên phần*/
+.name-favorite {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 650;
+  margin-bottom: 20px;
+}
+
+/* Bố cục icon */
+.structure-icon {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 5px;
+}
+
+/* Chỉnh sửa icon */
+.structure-icon i {
+  text-align: center;
+  padding-top: 10px;
+  height: 40px;
+  width: 50px;
+  font-size: 25px;
+  border: 2px solid rgb(80, 77, 117);
+  border-radius: 50%;
+}
+
+/* Tên sở thích */
+.structure-icon p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+}
+
+.structure-icon div {
+  text-align: center;
+}
+
+/*  */
+/*  */
+/* CHỈNH SỬA PHẦN NGÔN NGỮ - KỸ NĂNG */
+/*  */
+/*  */
+/* Trình độ đã đạt */
+.passed {
+  background: #199cdb;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* Trình độ chưa đạt */
+.failed {
+  background: #b9c2c7;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* Ngôn ngữ */
+/* Bố cục */
+.language {
+  padding: 20px 20px;
+  border: 2px solid #a59e9e;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  row-gap: 30px;
+}
+
+/* Tên phần */
+.name-language {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 650;
+  margin-bottom: 20px;
+}
+
+/* Kỹ năng */
+/* Bố cục */
+.skills {
+  padding: 20px 20px;
+  border: 2px solid #a59e9e;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  row-gap: 30px;
+}
+
+#boostrap-override .skills-content {
+  padding-bottom: 10px;
+}
+
+/* Tên phần */
+.name-skills {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 650;
+  margin-bottom: 27.5px;
+}
+
+/*  */
+/*  */
+/* CHỈNH SỬA PHẦN CHỨNG CHỈ - GIẢI THƯỞNG */
+/*  */
+/*  */
+/* CSS GRID */
+.certificates-structure {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+/*Layout chung của từng chứng chỉ */
+.certificates {
+  display: flex;
+}
+
+/* Chỉnh sửa vị trí các thành phần */
+.certificate-name {
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.certificates img {
+  margin-right: 20px;
+  width: 150px;
+  height: 100px;
+}
+
+/* Tạo viền */
+/* Chứng chỉ web */
+#web {
+  border-bottom: 2px solid #d6c08d;
+  padding-bottom: 25px;
+}
+
+/* Chứng chỉ javascript */
+#java {
+  border-bottom: 2px solid #d6c08d;
+  padding-bottom: 25px;
+}
+#java img {
+  border-left: 2px solid #d6c08d;
+  padding-left: 15px;
+}
+
+/* Chứng chỉ database */
+#database {
+  margin-top: 25px;
+}
+
+/*  */
+/*  */
+/* CHỈNH SỬA PHẦN DỰ ÁN */
+/*  */
+/*  */
+/* Bố cục chung */
+.project-structure {
+  display: flex;
+  column-gap: 30px;
+}
+.project-details {
+  display: flex;
+  border-left: 2px solid #a59e9e;
+  border-right: 2px solid #a59e9e;
+  border-bottom: 2px solid #a59e9e;
+  padding: 15px 20px;
+}
+
+/* Tạo đường viền */
+.project-name {
+  padding: 20px 20px;
+  border: 2px solid #a59e9e;
+  margin: 0 0;
+}
+
+.project-description {
+  border: 2px solid #a59e9e;
+}
+
+.project-details-1 {
+  border-bottom: 2px solid #a59e9e;
+  border-left: 2px solid #a59e9e;
+  border-right: 2px solid #a59e9e;
+  padding: 5px 5px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+#project-name {
+  padding: 5px;
+}
+
+/* Chỉnh sửa tgian của dự án */
+.project-time {
+  height: 28px;
+  color: white;
+  background-color: #2671e2;
+  border-radius: 20px;
+  padding: 2px 15px;
+  margin-right: 20px;
+}
+
+/* Điều chỉnh kích thước ảnh dự án */
+.project-structure img {
+  width: 376.66px;
+}
+
+/* CHỈNH SỬA FOOTER */
+
+#link ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #2671e2;
+  list-style-type: none;
+}
+
+#link li {
+  display: flex;
+  margin-right: 30px;
+}
+
+.footer-link {
+  display: inherit;
+  padding-top: 20px;
+}
