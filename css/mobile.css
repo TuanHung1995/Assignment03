@@ -1,0 +1,107 @@
+@media only screen and (max-width: 600px) {
+  #boostrap-override .container {
+    max-width: 100%;
+  }
+  #banner span {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+
+  #boostrap-override .introduction {
+    display: none;
+  }
+
+  /* FORM EMAIL */
+  #boostrap-override .mb-3 {
+    display: none;
+  }
+
+  /* NAVBAR */
+  #menu {
+    display: block;
+  }
+
+  #nav-bar {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .name-1 {
+    border: none;
+  }
+
+  .name-2 {
+    border: none;
+  }
+
+  #about-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding: 0 15px;
+    width: auto;
+  }
+
+  #target,
+  #personal-info {
+    max-width: 600px; /* Giới hạn chiều rộng của container */
+  }
+
+  #personal-info {
+    margin: 50px 15px;
+  }
+
+  /* Ẩn nút Submit khi hiển thị thông tin cá nhân */
+  #emailForm,
+  #submitButton {
+    display: none;
+  }
+
+  .hidden {
+    display: initial;
+  }
+
+  #job-info-details {
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+
+  /* ÂN NÚT VIEW MORE */
+  #boostrap-override .view-more {
+    display: none;
+  }
+
+  .certificates-structure {
+    display: block;
+  }
+
+  .certificates {
+    display: inherit;
+  }
+
+  #java {
+    padding-top: 25px;
+  }
+
+  #java img {
+    border-left: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .certificates img {
+    margin-right: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .project-structure {
+    display: block;
+  }
+
+  #link {
+    width: 100%;
+    align-items: center;
+  }
+}
